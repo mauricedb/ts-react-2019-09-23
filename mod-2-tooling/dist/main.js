@@ -81,32 +81,32 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/calculator.js":
+/***/ "./src/calculator.ts":
 /*!***************************!*\
-  !*** ./src/calculator.js ***!
+  !*** ./src/calculator.ts ***!
   \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nclass Calculator {\r\n  add(x, y) {\r\n    return x + y;\r\n  }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (Calculator);\r\n\n\n//# sourceURL=webpack:///./src/calculator.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nvar Calculator =\n/*#__PURE__*/\nfunction () {\n  function Calculator() {\n    _classCallCheck(this, Calculator);\n  }\n\n  _createClass(Calculator, [{\n    key: \"add\",\n    value: function add(x, y) {\n      return x + y;\n    }\n  }]);\n\n  return Calculator;\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Calculator);\n\n//# sourceURL=webpack:///./src/calculator.ts?");
 
 /***/ }),
 
-/***/ "./src/main.js":
+/***/ "./src/main.ts":
 /*!*********************!*\
-  !*** ./src/main.js ***!
+  !*** ./src/main.ts ***!
   \*********************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _calculator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./calculator.js */ \"./src/calculator.js\");\n\r\n\r\nconst calc = new _calculator_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\r\nconsole.log(`1 + 2 = ${calc.add(1, 2)}`);\r\n\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _calculator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./calculator */ \"./src/calculator.ts\");\n\nvar calc = new _calculator__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\nvar sum = calc.add(1, 2);\nconsole.log(\"1 + 2 = \".concat(sum));\n\n//# sourceURL=webpack:///./src/main.ts?");
 
 /***/ })
 
