@@ -1,1 +1,4 @@
-# ts-react-2019-09-23
+# React & TypeScript
+
+- [TypeScript](http://www.typescriptlang.org)
+- [TS-Node]()https://www.npmjs.com/package/ts-node
