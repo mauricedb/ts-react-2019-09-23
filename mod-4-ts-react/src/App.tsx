@@ -9,7 +9,7 @@ function App() {
     <div>
       <h1>React and TypeScript</h1>
       <Counter />
-      <Person>A person</Person>
+      <Person></Person>
       <Clock interval={2000}></Clock>
     </div>
   );

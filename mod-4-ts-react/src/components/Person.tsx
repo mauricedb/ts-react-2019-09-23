@@ -3,7 +3,7 @@ import withErrorBoundary from "./errorBoundary";
 import LabelWithInput from "./LabelWithInput";
 
 type Props = {
-  // children?: never;
+  children?: never;
 };
 
 type State = {
