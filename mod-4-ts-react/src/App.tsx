@@ -9,8 +9,8 @@ function App() {
     <div>
       <h1>React and TypeScript</h1>
       <Counter />
-      <Person />
-      <Clock inteval={2000}>The current time is:</Clock>
+      <Person>A person</Person>
+      <Clock interval={2000}></Clock>
     </div>
   );
 }

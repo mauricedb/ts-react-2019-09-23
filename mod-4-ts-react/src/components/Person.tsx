@@ -1,23 +1,41 @@
-import React, { Component } from "react";
+import React, { Component, ChangeEventHandler, ChangeEvent } from "react";
 import withErrorBoundary from "./errorBoundary";
 import LabelWithInput from "./LabelWithInput";
 
-class Person extends Component {
-  state = {
-    firstName: "Ford",
-    lastName: "Prefect"
-  };
+type Props = {
+  children?: never;
+};
 
-  onChange = e => {
+type State = {
+  [key: string]: string;
+  firstName: string;
+  lastName: string;
+};
+
+class Person extends Component<Props, State> {
+  constructor(props: Props) {
+    super(props);
+    this.state = {
+      firstName: "Ford",
+      lastName: "Prefect"
+    };
+  }
+  // static defaultProps = {
+  //   xxxx: 1
+  // };
+  onChange = (e: ChangeEvent<HTMLInputElement>) => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
   render() {
     const { firstName, lastName } = this.state;
+    // return ""
+    // return null
+    // return undefined;
 
     return (
       <div>
-        <LabelWithInput
+        <LabelWithInput<State>
           label="Firstname: "
           name="firstName"
           value={firstName}
