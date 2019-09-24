@@ -10,14 +10,22 @@ const Jokes: FunctionComponent = () => {
   const { loading, data: jokes } = useFetch<Joke>("/api/jon-skeet.json");
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <h2>Jokes</h2>
+        <div>Loading...</div>
+      </div>
+    );
   }
   return (
-    <ul>
-      {jokes.map(j => (
-        <li key={j.id}>{j.joke}</li>
-      ))}
-    </ul>
+    <div>
+      <h2>Jokes</h2>
+      <ul>
+        {jokes.map(j => (
+          <li key={j.id}>{j.joke}</li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
