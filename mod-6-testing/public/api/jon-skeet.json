@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "joke": "Jon Skeet is immutable. If something's going to change, it's going to have to be the rest of the universe."
+  },
+  {
+    "id": 2,
+    "joke": "Anonymous methods and anonymous types are really all called Jon Skeet. They just don't like to boast."
+  },
+  {
+    "id": 3,
+    "joke": "Jon Skeet's code doesn't follow a coding convention. It is the coding convention."
+  },
+  {
+    "id": 4,
+    "joke": "Jon Skeet doesn't have performance bottlenecks. He just makes the universe wait its turn."
+  },
+  {
+    "id": 5,
+    "joke": "Jon Skeet is the only person who has ranked higher than Jon Skeet in the SO all-time rep league."
+  },
+  {
+    "id": 6,
+    "joke": "Users don't mark Jon Skeet's answers as accepted. The universe accepts them out of a sense of truth and justice."
+  },
+  { "id": 7, "joke": "Jon Skeet can divide by zero. Twice." },
+  {
+    "id": 8,
+    "joke": "Jon Skeet is the only top 100 SO user who is human. The others are bots that he coded to pass the time between questions."
+  },
+  {
+    "id": 9,
+    "joke": "Jon Skeet coded his last project entirely in Microsoft Paint, just for the challenge."
+  },
+  {
+    "id": 10,
+    "joke": "Jon Skeet does not use exceptions when programming. He has not been able to identify any of his code that is not exceptional."
+  },
+  {
+    "id": 11,
+    "joke": "When Jon Skeet's code fails to compile the compiler apologises."
+  },
+  {
+    "id": 12,
+    "joke": "When you search for 'guru' on Google it says 'Did you mean Jon Skeet?'"
+  },
+  { "id": 13, "joke": "Jon Skeet can recite π. Backwards." },
+  { "id": 14, "joke": "When Jon Skeet points to null, null quakes in fear." },
+  {
+    "id": 15,
+    "joke": "Donald Knuth wears a 'Jon Skeet is my Homeboy' t-shirt to show off at parties."
+  },
+  {
+    "id": 16,
+    "joke": "Jon Skeet is the traveling salesman. Only he knows the shortest route."
+  },
+  {
+    "id": 17,
+    "joke": "Q: Can Jon Skeet ask a question that even Jon Skeet can't answer? A: Yes. And he can answer it, too."
+  },
+  { "id": 18, "joke": "Google is Jon Skeet behind a proxy." },
+  {
+    "id": 19,
+    "joke": "Jon Skeet does not recognize anonymous types in .net .. he knows everyone of them and where they live."
+  },
+  {
+    "id": 20,
+    "joke": "There is no 'CTRL' button on Jon Skeet's computer. Jon Skeet is always in control."
+  },
+  {
+    "id": 21,
+    "joke": "The only time Jon Skeet was wrong was when he thought he had made a mistake."
+  }
+]
