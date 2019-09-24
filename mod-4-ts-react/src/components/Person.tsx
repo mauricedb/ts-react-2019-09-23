@@ -1,13 +1,12 @@
-import React, { Component, ChangeEventHandler, ChangeEvent } from "react";
+import React, { Component, ChangeEvent } from "react";
 import withErrorBoundary from "./errorBoundary";
 import LabelWithInput from "./LabelWithInput";
 
 type Props = {
-  children?: never;
+  // children?: never;
 };
 
 type State = {
-  [key: string]: string;
   firstName: string;
   lastName: string;
 };
@@ -23,8 +22,9 @@ class Person extends Component<Props, State> {
   // static defaultProps = {
   //   xxxx: 1
   // };
+
   onChange = (e: ChangeEvent<HTMLInputElement>) => {
-    this.setState({ [e.target.name]: e.target.value });
+    this.setState({ ...this.state, [e.target.name]: e.target.value });
   };
 
   render() {
@@ -41,7 +41,7 @@ class Person extends Component<Props, State> {
           value={firstName}
           onChange={this.onChange}
         />
-        <LabelWithInput
+        <LabelWithInput<State>
           label="Lastname: "
           name="lastName"
           value={lastName}

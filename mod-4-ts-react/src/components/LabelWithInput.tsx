@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 type Props<T extends { [key: string]: string }> = {
   label: string;
-  name: keyof T;
+  name: Extract<keyof T, string>;
   value: string | number;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
   props?: {};
@@ -19,12 +19,7 @@ function LabelWithInput<T extends { [key: string]: string }>({
   return (
     <div>
       <label>{label}</label>
-      <input
-        name={name as string}
-        value={value}
-        {...props}
-        onChange={onChange}
-      />
+      <input name={name} value={value} {...props} onChange={onChange} />
     </div>
   );
 }
